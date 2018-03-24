@@ -1,79 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="tw.com.flag.qrcodetest.MainActivity">
-<RelativeLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    tools:layout_editor_absoluteY="0dp"
-    tools:layout_editor_absoluteX="0dp"
-    tools:ignore="MissingConstraints">
-
-    <!--<TextView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="QRcodeScaner"-->
-        <!--android:textSize="25dp"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:layout_alignParentLeft="true"-->
-        <!--android:layout_alignParentRight="true"-->
-        <!--/>-->
-
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textStyle="bold"
-    android:textSize="25dp"
-    android:id="@+id/fuxk"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentStart="true"
-    android:text="掃錯你就知道"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/out"
-        android:layout_toStartOf="@+id/fuxk"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:text="恭喜你獲得item1,放鞭炮囉~~"
-        android:visibility="invisible"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        />
+    android:orientation="vertical"
+    tools:context="tw.com.flag.qrcode_scanner.MainActivity">
 
 
-    <!--<Button-->
-        <!--android:id="@+id/scan_btn"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:layout_centerInParent="true"-->
-        <!--android:layout_centerVertical="true"-->
-        <!--android:text="Scan"-->
-        <!--tools:layout_editor_absoluteX="148dp"-->
-        <!--tools:layout_editor_absoluteY="226dp"-->
-        <!--android:onClick="onClick"-->
-        <!--android:layout_alignParentBottom="true"-->
-        <!--/>-->
-    <com.getbase.floatingactionbutton.FloatingActionsMenu
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true">
-        <com.getbase.floatingactionbutton.FloatingActionButton
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:onClick="onClick">
-        </com.getbase.floatingactionbutton.FloatingActionButton>
 
+        <ImageView
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:onClick="QR_code_scanner"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/qqq"
+            />
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="#ff0000"
+            android:id="@+id/qr_show1"
+            android:onClick="href1"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_below="@+id/qr_show1"
+            android:id="@+id/qr_show2"
+            android:background="#00ff00"
+            android:onClick="href2"
+            android:layout_marginTop="50px"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_below="@+id/qr_show2"
+            android:id="@+id/qr_show3"
+            android:background="#0000ff"
+            android:onClick="href3"
+            android:layout_marginTop="50px"
+           />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_below="@+id/qr_show3"
+            android:id="@+id/qr_show4"
+            android:background="#987654"
+            android:onClick="href4"
+            android:layout_marginTop="50px"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_below="@+id/qr_show4"
+            android:id="@+id/qr_show5"
+            android:background="#951236"
+            android:onClick="href5"
+            android:layout_marginTop="50px"
+            />
 
-    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_below="@+id/qr_show5"
+            android:background="#df380e"
+            android:layout_marginTop="50px"
+            android:id="@+id/test_show"/>
+
 
 </RelativeLayout>
-</android.support.constraint.ConstraintLayout>
